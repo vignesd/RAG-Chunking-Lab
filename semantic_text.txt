@@ -1,0 +1,16 @@
+Modern backend services require robust design patterns to handle high concurrent throughput.
+Using Python alongside asynchronous execution models (like `asyncio` and `psycopg2`) significantly reduces I/O bottlenecks.
+Database administrators must regularly analyze query execution plans, configure appropriate indexes, and execute maintenance scripts using tools like `pg_dump` and `sqlite3` CLI.
+Proper schema normalization prevents data anomalies, while strategic denormalization improves read speeds for analytical workloads.
+Transforming raw unstructured documents into dense numerical vectors is the foundation of semantic search.
+Models like `nomic-embed-text` map sentences into high-dimensional space where semantic closeness correlates with vector proximity.
+While dense vector search excels at conceptual matching, it often struggles with exact keyword lookups and fine-grained nuances.
+Integrating a cross-encoder reranker (such as `Qwen3-Reranker-0.6B` or `gpt-4o-mini`) re-evaluates the top-$K$ candidates, scoring query-document pairs jointly to eliminate false positives and improve final output relevance.
+
+Effective technology initiatives rely heavily on structured management methodologies.
+PMP Alignment:Tracking scope, schedule, budget, and risk registers ensures stakeholder alignment.
+Governance Controls:Implementing AI compliance and risk governance safeguards against hallucination drift and data leakage.
+Agile sprint reviews provide continuous feedback loops, allowing teams to pivot rapidly based on evolving user requirements.
+Sustaining high cognitive performance over a long-term professional career requires strict boundary management.
+Time-blocking consecutive hours for uninterrupted coding prevents context-switching fatigue.
+Furthermore, maintaining a consistent sleep schedule, proper hydration, and scheduled physical activity directly correlates with problem-solving resilience and code quality.
