@@ -10,7 +10,9 @@ from .logging_config import setup_logging
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-SAMPLE_FILE = PROJECT_ROOT / "data" / "examples" / "sample_document.md"
+SAMPLE_FILE = PROJECT_ROOT / "data" / "examples" / \
+    "semantic_text.txt"
+
 STRATEGIES: dict[int, tuple[str, Callable[[str], object]]] = {
     1: ("Fixed Chunking", fixed_chunk),
     2: ("Recursive Chunking", recursive_chunk),
@@ -54,11 +56,11 @@ def main(option: int = 1) -> None:
     setup_logging()
     sample_text = SAMPLE_FILE.read_text(encoding="utf-8")
 
-    print("=" * 50)
-    print("ORIGINAL TEXT")
-    print("=" * 50)
-    print(sample_text)
-    print("=" * 50)
+    # print("=" * 50)
+    # print("ORIGINAL TEXT")
+    # print("=" * 50)
+    # print(sample_text)
+    # print("=" * 50)
     print(f"Selected strategy: {strategy_name}")
     chunker(sample_text)
 

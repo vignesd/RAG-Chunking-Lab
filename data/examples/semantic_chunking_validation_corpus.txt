@@ -1,0 +1,696 @@
+CONTENTS
+1. Engineering
+2. Technology and Computer Science
+3. Medical and Human Biology
+4. Sales, Marketing and Customer Relationships
+5. General Knowledge and Science
+6. History and Civilisations
+7. Finance and Accounting
+8. Business Operations and Project Management
+9. Mathematics and Logical Reasoning
+10. Environment, Energy and Sustainability
+11. Cross-Domain Terminology and Semantic Ambiguity
+12. Integrated Case Studies and Topic-Boundary Tests
+13. Structured Reference Material
+14. Mini Glossary with Domain-Specific Meanings
+15. Validation Guide for Semantic Chunking
+
+
+
+==============================================================================
+1. ENGINEERING
+==============================================================================
+
+1.1 Civil engineering: foundations and soil behaviour
+-----------------------------------------------------
+
+A building transfers its weight through columns, walls, beams and foundations into the ground. The foundation must spread the applied load so that the soil can support it without excessive settlement or shear failure. The correct foundation type depends on the magnitude and distribution of loads, soil profile, groundwater level, nearby structures, construction access and local regulations. A shallow footing may be economical where competent soil is available near the surface. Deep foundations, such as piles or drilled shafts, are considered when weak or compressible layers extend to significant depths, or when uplift and lateral loads govern the design.
+
+Soil is a three-phase material consisting of solid particles, water and air. Its behaviour depends on particle size, mineral composition, density, water content and stress history. Sand generally drains more quickly than clay because its larger interconnected pores allow water to move relatively freely. Saturated clay may consolidate slowly after loading because excess pore-water pressure dissipates over time. This time-dependent process explains why a structure can continue to settle long after construction has finished. A geotechnical investigation therefore examines both immediate strength and long-term deformation.
+
+Consider a proposed warehouse beside an existing hospital. The warehouse columns create concentrated loads, while excavation may alter the stress state around the hospital foundations. The design team cannot select a footing merely by comparing the warehouse load with a generic soil bearing-capacity value. It must examine borehole logs, groundwater observations, laboratory test results, settlement compatibility and construction sequence. Monitoring points may be installed to detect movement during excavation. The hospital's operational sensitivity can make a conservative construction method preferable even if a faster alternative appears cheaper.
+
+1.2 Structural engineering: loads, members and serviceability
+-------------------------------------------------------------
+
+Structural engineering converts actions on a building or bridge into a safe arrangement of members and connections. Dead loads include the self-weight of permanent structural and non-structural components. Live loads represent occupancy, furniture, stored materials and other variable uses. Wind, earthquake, temperature, snow, impact and construction loads may also be relevant. Load combinations account for the fact that not every maximum action is expected to occur simultaneously. Design codes provide the factors and combinations that engineers must apply for the jurisdiction and structure type.
+
+A beam primarily resists bending and shear. Under a downward distributed load, the upper region of a simply supported beam is commonly in compression and the lower region in tension. A column primarily carries axial compression, but practical columns may also experience bending because loads are eccentric or frames sway. Slender columns can fail through buckling before the material reaches its compressive strength. A connection is not a minor detail: bolts, welds, plates and anchorage transfer forces between members, and a weak connection can govern the capacity of an otherwise adequate frame.
+
+Strength is not the only performance requirement. A floor may be strong enough to avoid collapse yet feel uncomfortable because of vibration. Excessive deflection can crack partitions, damage finishes or interfere with doors. Serviceability checks address deflection, vibration, crack width, drift and durability under normal use. A design review should therefore ask two separate questions: will the structure remain safe under the required design actions, and will it remain functional and comfortable throughout its intended life?
+
+1.3 Electrical engineering: power and protection
+------------------------------------------------
+
+An electrical distribution system delivers energy from a source to loads through conductors, transformers, switchgear and protective devices. Voltage is the electrical potential difference, current is the rate of charge flow, and resistance describes opposition to that flow. In a simple resistive direct-current circuit, Ohm's law relates them as V = I × R. Alternating-current systems require additional concepts because voltage and current vary with time and may not be in phase. Real power represents the rate of useful energy transfer, while reactive power supports electric and magnetic fields in equipment such as motors and transformers.
+
+A circuit breaker interrupts current when a fault or overload exceeds its operating characteristics. Its rating must be coordinated with conductor ampacity, prospective fault current and the installation environment. A protective device that is too large may fail to protect a cable; one that is too sensitive may trip unnecessarily during normal starting current. Selectivity, sometimes called discrimination, aims to make the protective device closest to a fault operate first, preserving supply to unaffected circuits. Coordination studies use device curves and fault calculations rather than relying on nominal current ratings alone.
+
+A hospital's critical-care circuits illustrate why electrical reliability is a system property. Emergency generators, uninterruptible power supplies, transfer switches, grounding arrangements and periodic testing work together. A generator may start successfully but still fail to support a load if the transfer switch is defective or fuel is unavailable. Maintenance plans must test the complete chain under realistic conditions. Redundancy reduces risk, but duplicated equipment can still share a common failure such as flooding, incorrect maintenance or a software configuration error.
+
+1.4 Mechanical engineering: heat, motion and machines
+-----------------------------------------------------
+
+Thermodynamics studies energy, heat and work. The first law expresses conservation of energy: energy entering a system must be accounted for as energy leaving, accumulating or being converted between forms. The second law introduces entropy and explains why real processes have direction and why no heat engine can convert all supplied heat into useful work. In a refrigeration cycle, work is supplied to move heat from a colder region to a warmer one. The coefficient of performance compares useful heating or cooling delivered with the work input.
+
+A centrifugal pump increases fluid pressure by transferring mechanical energy from a rotating impeller to the liquid. The operating point is determined by the intersection of the pump performance curve and the system curve. If a valve closes, system resistance increases and the operating point changes. Cavitation can occur when local pressure falls below the liquid's vapour pressure, creating bubbles that collapse as pressure recovers. Repeated collapse can cause noise, vibration, pitting and loss of performance. Correct pump selection considers flow, head, fluid properties, suction conditions, efficiency and the expected operating range.
+
+A manufacturing plant may use predictive maintenance to monitor bearing vibration and motor temperature. A rising vibration trend can indicate imbalance, misalignment, looseness or bearing damage, but the signal alone does not prove which fault is present. Engineers compare frequency components, operating speed, load, lubrication history and inspection findings. A useful maintenance decision combines sensor evidence with physical understanding. Replacing every component whenever a threshold is crossed can waste money; ignoring a persistent trend can cause an unplanned shutdown.
+
+1.5 Engineering practice: requirements, risk and verification
+-------------------------------------------------------------
+
+A project requirement should describe an outcome that can be verified. 'The pump shall deliver 40 litres per second at the specified discharge pressure' is more testable than 'the pump shall be powerful'. Requirements should identify units, operating conditions, tolerances and acceptance criteria. Traceability connects each requirement to its design response, calculation, drawing, inspection or test. When a requirement changes, traceability helps identify affected components and documents. Without it, teams may update a drawing while leaving a calculation or procurement specification inconsistent.
+
+Risk assessment considers the likelihood and consequence of hazards, then identifies controls. A risk matrix is a communication aid, not a substitute for engineering judgement. A low-probability event with catastrophic consequences may deserve substantial attention. Controls are generally stronger when they eliminate a hazard or reduce it through design, rather than relying solely on warnings and personal behaviour. For example, designing a platform with permanent guardrails is usually more dependable than expecting every worker to remember to attach a temporary restraint.
+
+Verification asks whether the design or product meets its specified requirements. Validation asks whether the resulting system meets the real needs of its intended users in its intended environment. A component can pass a laboratory verification test and still fail validation if it is difficult to maintain or incompatible with the wider process. Both activities should be planned early, with representative test conditions, measurable criteria and documented results.
+
+
+==============================================================================
+2. TECHNOLOGY AND COMPUTER SCIENCE
+==============================================================================
+
+2.1 Programming languages and software design
+---------------------------------------------
+
+A programming language provides syntax and semantics for expressing computations. Python is widely used for automation, data processing and machine learning because its readable syntax and extensive libraries support rapid development. Java is common in enterprise systems where mature tooling, portability and large application ecosystems matter. C and C++ are used where low-level control and predictable performance are important. Choosing a language should follow the problem's constraints, team capability, deployment environment and maintenance horizon rather than popularity alone.
+
+A function should ideally have a clear responsibility, explicit inputs and predictable outputs. Small functions are easier to test because their behaviour can be examined independently. A function that reads a file, transforms records, sends an email and updates a database has several reasons to change, making failures difficult to isolate. Separating these responsibilities creates boundaries where tests and error handling can be applied. This does not mean every line needs its own function; decomposition should clarify the design rather than create unnecessary indirection.
+
+An application programming interface, or API, defines how software components communicate. A REST-style HTTP API commonly represents resources through URLs and uses methods such as GET, POST, PUT, PATCH and DELETE. A successful HTTP response does not necessarily mean the business operation achieved its intended outcome; the response body and status semantics must also be interpreted. Clients should handle timeouts, retries, authentication failures, validation errors and rate limits. Retrying a non-idempotent operation without an idempotency strategy can create duplicate payments or orders.
+
+2.2 Databases, indexing and transactions
+----------------------------------------
+
+A relational database stores information in tables whose rows represent records and whose columns represent attributes. Primary keys identify rows, while foreign keys express relationships between tables. Normalisation reduces avoidable duplication and update anomalies, although reporting workloads sometimes use denormalised structures for performance. A customer table and an order table should normally be linked through a stable customer identifier rather than by repeatedly copying a customer's name into every order record.
+
+A database index is an auxiliary structure that helps locate rows without scanning an entire table. Indexes can improve reads but consume storage and add work to inserts, updates and deletes. A composite index on (customer_id, order_date) may support queries that filter by customer and sort or filter by date. The order of indexed columns matters because many database engines use the leftmost prefix of a composite index. Query plans and representative workload measurements should guide index design.
+
+Transactions group operations into a unit with properties commonly described by ACID: atomicity, consistency, isolation and durability. If a bank transfer debits one account and credits another, both changes should commit together or neither should. Isolation controls how concurrent transactions observe one another's changes. Higher isolation can reduce anomalies but may increase contention. Applications should keep transactions appropriately short and define how deadlocks and serialization failures are retried.
+
+A database backup is not proven useful until restoration has been tested. A backup file may be incomplete, encrypted with an unavailable key or inconsistent with application configuration. Recovery planning defines recovery point objective (RPO), the maximum tolerable data loss measured in time, and recovery time objective (RTO), the target time to restore service. A business that can tolerate losing five minutes of data needs a different backup and replication design from one that can tolerate losing a full day.
+
+2.3 Artificial intelligence, machine learning and embeddings
+------------------------------------------------------------
+
+Artificial intelligence is a broad field concerned with systems that perform tasks associated with human intelligence. Machine learning is a subset in which models learn patterns from data rather than relying only on explicitly written rules. Supervised learning uses labelled examples, such as historical transactions marked as fraudulent or legitimate. Unsupervised learning looks for structure without target labels, as in clustering customers by observed behaviour. Reinforcement learning trains an agent through interactions and feedback, often represented as rewards and penalties.
+
+An embedding model maps an input such as a sentence, paragraph or image into a numerical vector. The goal is to place semantically similar inputs near one another in vector space according to the model's learned representation. A retrieval system can embed a user question, compare it with stored document vectors and return nearby passages. Similarity is not the same as truth: two passages can be close in embedding space while one is outdated, irrelevant to the user's jurisdiction or contradicted by a more authoritative source.
+
+A retrieval-augmented generation system typically retrieves external information and supplies it to a language model as context for an answer. The retrieval stage determines which evidence is available; the generation stage interprets that evidence and produces a response. Poor chunk boundaries can split a procedure from its prerequisites, while overly large chunks can introduce unrelated content and dilute relevance. Evaluation should measure retrieval quality separately from answer quality. A fluent answer can still be wrong if the retriever selected the wrong guide.
+
+Semantic chunking attempts to split text where meaning changes rather than at a fixed character or token count. One implementation compares embeddings of neighbouring sentence groups and identifies unusually large semantic distances. Another uses topic segmentation or language-model-assisted boundary detection. Threshold selection is important: a threshold that is too sensitive creates many tiny fragments, while one that is too permissive leaves unrelated topics together. Semantic similarity should be combined with structural signals such as headings, lists, tables and document boundaries.
+
+Consider the phrase 'the model is overfitting'. In machine learning, overfitting means a model has learned patterns specific to training data that do not generalise well. In manufacturing, a physical model may be overfitted to one test condition. In fashion, a model may be fitted too tightly to a garment. A robust semantic retriever should use surrounding context to distinguish these meanings rather than treating the shared word as sufficient evidence of a match.
+
+2.4 Cloud computing, networks and cybersecurity
+-----------------------------------------------
+
+Cloud computing provides on-demand access to shared computing resources such as virtual machines, storage, databases and managed services. Infrastructure as a Service gives customers substantial control over operating systems and deployed software. Platform as a Service abstracts more of the underlying runtime and infrastructure. Software as a Service provides a complete application managed by a provider. The shared-responsibility model divides security duties between provider and customer; the exact boundary varies by service and configuration.
+
+A network packet carries data and addressing information between endpoints. IP provides logical addressing and routing, while TCP provides a reliable, ordered byte stream through sequencing, acknowledgements and retransmission. DNS translates domain names into records such as IP addresses. A browser connection can fail because of name resolution, routing, firewall rules, certificate validation, server availability or application errors. Troubleshooting should test each layer rather than assuming every connection failure is caused by the application.
+
+Authentication establishes who or what an entity claims to be. Authorisation determines what that authenticated entity is allowed to do. A password proves knowledge of a secret, while a multi-factor design combines independent categories such as knowledge, possession or inherence. Role-based access control assigns permissions through roles; attribute-based access control evaluates attributes of the user, resource and environment. The principle of least privilege grants only the access required for a defined task and duration.
+
+Encryption protects information by transforming readable data into ciphertext using cryptographic keys. Encryption at rest protects stored data, while encryption in transit protects data moving across networks. Hashing is different: a cryptographic hash produces a fixed-length digest and is not designed to be reversed. Passwords should be stored using a password-hashing scheme with a unique salt and suitable work factor, not as plaintext or as a simple fast hash. Key management is central; strong encryption is ineffective if keys are exposed or poorly controlled.
+
+A security incident response plan defines preparation, detection, containment, eradication, recovery and lessons learned. During a suspected account compromise, responders may revoke active sessions, rotate credentials, preserve logs and investigate lateral movement. Deleting suspicious files immediately can destroy evidence. Communications should distinguish confirmed facts from hypotheses, identify affected systems and explain what actions users must take. A post-incident review should improve controls and processes without focusing only on individual blame.
+
+2.5 Software delivery, testing and observability
+------------------------------------------------
+
+Unit tests check small units of behaviour, integration tests examine interactions between components, and end-to-end tests exercise a complete user journey. A test suite should include normal cases, boundary values, invalid inputs and failure paths. A test that merely repeats the implementation's assumptions can confirm a bug rather than detect it. Independent expected results, property-based tests and carefully selected regression cases improve confidence.
+
+Continuous integration automatically builds and tests changes when developers submit code. Continuous delivery keeps software in a deployable state, while continuous deployment automatically releases qualifying changes to production. A pipeline may include linting, type checking, unit tests, dependency scanning, packaging and deployment. Secrets should be injected through a secure secret-management mechanism rather than committed to source control. A green pipeline indicates that defined checks passed; it does not prove the software is free of defects.
+
+Observability uses logs, metrics and traces to help explain system behaviour. Logs record discrete events, metrics summarise measurements over time, and traces connect operations across services. Latency, traffic, errors and saturation are common service indicators. A high error rate may be caused by a dependency, a recent release, resource exhaustion or malformed input. Correlation identifiers help connect events from the same request, but sensitive personal data should not be copied indiscriminately into logs.
+
+
+==============================================================================
+3. MEDICAL AND HUMAN BIOLOGY
+==============================================================================
+
+3.1 Human anatomy and physiology
+--------------------------------
+
+The human body is organised into cells, tissues, organs and organ systems. Cells perform specialised functions, tissues group similar cells, and organs combine different tissues to perform larger tasks. The circulatory system transports oxygen, nutrients, hormones and waste products. The respiratory system exchanges oxygen and carbon dioxide. The nervous and endocrine systems coordinate activity through electrical signals and chemical messengers. These systems interact continuously; a change in one can affect several others.
+
+The heart contains four chambers. The right side receives oxygen-poor blood from the body and pumps it to the lungs. The left side receives oxygen-rich blood from the lungs and pumps it through the systemic circulation. Valves help maintain one-way flow. The cardiac cycle includes periods of contraction and relaxation, and electrical conduction coordinates the timing of contraction. Blood pressure reflects the force exerted by circulating blood against arterial walls and is influenced by cardiac output, vascular resistance, blood volume and arterial properties.
+
+The kidneys filter blood, regulate water and electrolyte balance, help control acid-base status and contribute to blood-pressure regulation. Functional units called nephrons filter plasma and selectively reabsorb or secrete substances. A blood test measuring creatinine can contribute to an estimate of kidney filtration, but interpretation depends on factors such as muscle mass, age and clinical context. A single result should not be interpreted in isolation from prior values, symptoms and other investigations.
+
+3.2 Infection, immunity and vaccination
+---------------------------------------
+
+The immune system protects the body from pathogens and abnormal cells. Innate immunity provides rapid, broad responses through barriers, inflammatory processes and cells such as neutrophils and macrophages. Adaptive immunity develops targeted responses involving B lymphocytes and T lymphocytes. B cells can produce antibodies, while T cells help coordinate immune responses or destroy infected cells. Immune memory can support a faster response when the body encounters a familiar antigen again.
+
+A virus depends on host-cell machinery to replicate. Bacteria are single-celled organisms with their own cellular structures and metabolic processes. Antibiotics target bacterial processes and do not treat ordinary viral infections such as influenza. Antiviral medicines act on particular stages of viral replication and are effective only for specific infections and circumstances. Using antibiotics when they are not indicated contributes to antimicrobial resistance, making some infections harder to treat.
+
+Vaccines expose the immune system to an antigen or instructions for producing an antigen, allowing immune memory to develop without requiring the person to experience the full disease. Vaccine platforms include inactivated, live-attenuated, protein-subunit, viral-vector and messenger-RNA approaches. Effectiveness and safety vary by vaccine, population and outcome measured. Public-health recommendations depend on age, risk factors, local disease patterns and current guidance. Questions about an individual's vaccination schedule should be discussed with a qualified healthcare professional.
+
+3.3 Diabetes and metabolic health
+---------------------------------
+
+Glucose is an important energy source. Insulin, produced by pancreatic beta cells, helps regulate blood glucose by supporting uptake and storage in tissues. In type 1 diabetes, immune-mediated destruction of beta cells results in little or no insulin production. In type 2 diabetes, insulin resistance and progressive impairment of insulin secretion contribute to elevated blood glucose. Diabetes management may involve nutrition, physical activity, glucose monitoring, medicines and regular screening for complications.
+
+A fasting plasma glucose test measures glucose after a specified period without caloric intake. HbA1c reflects average blood glucose exposure over roughly the preceding two to three months, although conditions affecting red blood cell turnover can influence the result. Different diagnostic tests have different preparation requirements and thresholds. A result near a diagnostic threshold may require confirmation according to clinical guidelines. Laboratory values must be interpreted with symptoms, history and the testing method.
+
+A person with diabetes may be asked to monitor feet because reduced sensation and circulation can make minor injuries harder to notice and slower to heal. Daily inspection, suitable footwear and timely assessment of wounds can reduce the risk of serious complications. This example illustrates the difference between treating a number and managing a whole condition: glucose control matters, but eye, kidney, cardiovascular and foot health also require attention.
+
+3.4 Diagnostic reasoning and medical data
+-----------------------------------------
+
+A diagnosis is a reasoned conclusion based on symptoms, medical history, examination and investigations. A test result changes the probability of a condition; it rarely provides certainty on its own. Sensitivity describes how often a test is positive among people who have the condition. Specificity describes how often it is negative among people who do not have it. Positive predictive value depends on prevalence as well as test performance, so the same test can have different predictive value in different populations.
+
+A screening test is generally used to identify people who may need further assessment, often before symptoms appear. A diagnostic test is used to investigate whether a condition is present in a person with a relevant clinical question. Screening programmes must consider benefits, false positives, false negatives, overdiagnosis, follow-up capacity and potential harms. More testing is not automatically better; the value of a test depends on whether its result can improve a decision.
+
+Electronic health records contain structured fields, clinical notes, medication lists, allergies, laboratory results and imaging reports. Data quality problems include missing values, inconsistent units, duplicate entries and outdated medication lists. A medication marked as active may not be taken by the patient, and an allergy field may be incomplete. Clinical systems should preserve provenance, timestamps and authorship so that a reviewer can understand where a statement came from and whether it remains current.
+
+Medical information retrieval has a special need for source discipline. A general article about a medicine cannot replace the patient's prescription, and a result from one person's record must not be applied to another person. When summarising records, a system should distinguish documented facts, patient-reported information, calculated values and uncertain inferences. It should avoid inventing missing values and should direct urgent or high-risk concerns to appropriate clinical care.
+
+
+==============================================================================
+4. SALES, MARKETING AND CUSTOMER RELATIONSHIPS
+==============================================================================
+
+4.1 Sales pipeline and qualification
+------------------------------------
+
+A sales pipeline represents the stages through which a potential customer progresses, from initial identification to a closed outcome. Typical stages include lead capture, qualification, discovery, proposal, negotiation and closed-won or closed-lost. Stage definitions should be based on observable evidence. For example, an opportunity should not be marked as qualified merely because a prospect downloaded a brochure; qualification may require a defined need, an identified stakeholder, a plausible budget and an agreed next step.
+
+Lead qualification helps sales teams prioritise limited time. A common framework examines budget, authority, need and timing, although modern teams may adapt these criteria for complex buying groups. A prospect can have a genuine need but no approved budget, or a budget but no urgency. Qualification is not a one-time label: circumstances can change as the sales conversation develops. A respectful process records what is known, what remains uncertain and what evidence is needed next.
+
+A customer relationship management system stores accounts, contacts, opportunities, activities and service history. The same organisation may have multiple contacts with different roles in a buying decision. Data governance should define account ownership, duplicate handling, required fields and retention rules. If two sales representatives create separate records for the same customer, reporting can overstate the pipeline and communications can become inconsistent. A reliable CRM depends on clear process design as much as software configuration.
+
+4.2 Forecasting, conversion and sales metrics
+---------------------------------------------
+
+A conversion rate measures the proportion of records that move from one defined stage or state to another. If 80 qualified opportunities produce 20 wins, the win rate for that cohort is 25 percent. The denominator must be stated: a rate based on all website visitors is not comparable with a rate based only on qualified opportunities. Cohort timing also matters because opportunities created in one month may close several months later.
+
+Sales velocity estimates how quickly revenue moves through a pipeline. A commonly used model combines the number of opportunities, average deal value, win rate and sales-cycle length. The model is useful for directional analysis, but it depends on stable definitions and reliable data. A team can appear to improve velocity by creating many low-quality opportunities, yet actual revenue may not increase. Metrics should be interpreted together rather than optimised independently.
+
+A forecast may be committed, best case or pipeline, depending on the organisation's definitions. Forecast categories should reflect evidence such as customer confirmation, procurement status, decision dates and unresolved risks. A seller's optimism is not a substitute for evidence. Forecast accuracy can be assessed by comparing historical predictions with final outcomes, segmented by product, region, deal size and sales stage. Repeated overestimation may indicate poor qualification, unrealistic close dates or incentives that reward inflated pipeline values.
+
+4.3 Customer discovery and ethical persuasion
+---------------------------------------------
+
+Customer discovery is the process of understanding a buyer's goals, constraints, current workflow and definition of success. Open questions such as 'What happens when this process is delayed?' often reveal more than a feature checklist. A salesperson should distinguish a stated request from the underlying problem. A customer who asks for a dashboard may actually need faster exception handling, clearer accountability or fewer manual reconciliations.
+
+A value proposition explains why a solution is useful to a particular customer. It should connect capabilities to outcomes, such as reduced processing time, improved accuracy or lower operating risk. Claims should be supported by credible evidence and should state assumptions. Promising a guaranteed 40 percent saving without a valid baseline or comparable study can damage trust and create contractual risk. Ethical persuasion helps customers make informed decisions rather than obscuring limitations.
+
+After a sale, onboarding and customer success help the customer achieve the expected outcome. Adoption metrics may include active users, completion of key workflows, time to first value and support-ticket trends. A customer who has signed a contract but does not use the product is not necessarily successful. Renewal conversations should review realised value, unresolved problems and future needs rather than relying only on a calendar reminder.
+
+4.4 Sales scenarios and boundary cases
+--------------------------------------
+
+Scenario A: A prospect requests a discount before discussing requirements. The representative should understand the intended purchase, decision process and commercial constraints before proposing a concession. A discount may be justified by volume, term or strategic value, but it should not become an automatic response to every objection.
+
+Scenario B: A customer says a competitor is cheaper. The correct response is not to claim that the competitor's product is inferior without evidence. The representative can compare scope, service levels, implementation effort, support, security and total cost of ownership. If the competitor genuinely meets the customer's needs at lower cost, the sales team should acknowledge that possibility.
+
+Scenario C: A prospect asks the salesperson to send confidential pricing from another customer. The request should be declined. Commercial confidentiality must be respected even when disclosure might help close a deal. The representative can instead provide an approved price range, a public case study or a proposal based on the prospect's own requirements.
+
+
+==============================================================================
+5. GENERAL KNOWLEDGE AND SCIENCE
+==============================================================================
+
+5.1 Geography, climate and weather
+----------------------------------
+
+Weather describes atmospheric conditions over short periods, such as temperature, rainfall, wind and humidity. Climate describes long-term patterns and distributions, usually assessed over multi-decade periods. A cold day does not disprove global warming, just as a hot afternoon does not prove it. Climate analysis examines trends, variability, physical mechanisms and uncertainty across many observations and models.
+
+The water cycle describes the movement of water through evaporation, transpiration, condensation, precipitation, infiltration and runoff. Solar energy drives evaporation, while gravity moves water downhill through rivers and groundwater systems. Urban surfaces such as concrete reduce infiltration and can increase rapid runoff. Flood risk depends not only on rainfall intensity but also on drainage capacity, land use, soil saturation, river conditions and the location of people and infrastructure.
+
+Latitude, elevation, distance from the sea, ocean currents and prevailing winds influence regional climate. Chennai has a tropical coastal climate and receives important rainfall from the northeast monsoon, while other parts of India depend more strongly on the southwest monsoon. Local rainfall patterns can vary substantially within a region. A national seasonal average therefore cannot describe the experience of every district or watershed.
+
+5.2 Physics, chemistry and measurement
+--------------------------------------
+
+Force is a vector quantity with magnitude and direction. Newton's second law relates net force to mass and acceleration: F = m × a. Work is done when a force causes displacement in its direction, while power is the rate of doing work. These concepts are related but not interchangeable. A machine can perform the same amount of work in less time by delivering greater power.
+
+Atoms contain protons and neutrons in a nucleus, with electrons occupying surrounding quantum states. The number of protons defines the element. Isotopes have the same number of protons but different numbers of neutrons. Chemical bonds arise from interactions involving electrons. Ionic bonding involves electron transfer and electrostatic attraction between ions, while covalent bonding involves shared electron pairs. Real materials may exhibit more complex bonding character.
+
+Measurement requires a defined quantity, unit, instrument and method. Accuracy concerns closeness to the true or accepted value, while precision concerns repeatability or the spread of repeated measurements. A scale that always reads 0.5 kilograms too high may be precise but inaccurate. Calibration compares an instrument with a reference and documents its performance. Uncertainty should be reported when it affects interpretation or a decision.
+
+5.3 Economics and public policy
+-------------------------------
+
+Gross domestic product measures the market value of final goods and services produced within a country during a period. Nominal GDP uses current prices, while real GDP adjusts for price changes to estimate changes in output volume. GDP per person is an average and does not show how income is distributed. It also does not capture every aspect of wellbeing, unpaid work, environmental quality or leisure.
+
+Inflation is a sustained increase in the general price level, reducing the purchasing power of money. A consumer price index tracks the price of a defined basket over time. Individual households may experience different inflation because their spending patterns differ. If food and housing account for a large share of one household's budget, changes in those categories can matter more to that household than changes in the average basket.
+
+A central bank may influence monetary conditions through policy rates, liquidity operations and other tools. Higher interest rates can reduce borrowing and spending, potentially easing inflationary pressure, but effects occur with delays and vary across sectors. Fiscal policy concerns government revenue, spending and borrowing. Monetary and fiscal policy interact, but they are not the same instrument and are generally controlled through different institutional processes.
+
+5.4 Probability, statistics and critical thinking
+-------------------------------------------------
+
+Probability quantifies uncertainty on a scale from zero to one. The probability of an event and the probability of evidence given an event are different quantities. Bayes' theorem combines prior probability with the likelihood of observed evidence to update a belief. This distinction matters when interpreting medical tests, fraud alerts and quality-control inspections. A rare event can produce many false alarms if a test has an appreciable false-positive rate.
+
+The mean is sensitive to extreme values, while the median is the middle observation after sorting. For household income, a small number of very high values can raise the mean substantially above the median. The mode identifies the most frequent value or category. No single measure of central tendency is best for every distribution; the shape of the data and the question being asked should guide the choice.
+
+Correlation measures the strength and direction of association between variables. It does not by itself establish causation. Ice-cream sales and swimming-related incidents may both rise during hot weather, but this does not mean ice-cream purchases cause the incidents. Temperature is a possible confounding variable. Causal analysis requires a design and assumptions that address alternative explanations, selection effects and measurement error.
+
+A sample is a subset of a population. Random sampling can help make estimates representative, but non-response, coverage gaps and poor question design can still introduce bias. A large sample does not automatically correct a biased selection process. For example, an online poll open only to users of one service cannot reliably represent the entire population of a country, regardless of how many responses it receives.
+
+
+==============================================================================
+6. HISTORY AND CIVILISATIONS
+==============================================================================
+
+6.1 Ancient societies and trade
+-------------------------------
+
+The Indus Valley or Harappan civilisation flourished across parts of present-day Pakistan and northwestern India during the Bronze Age. Major urban centres such as Harappa and Mohenjo-daro are known for planned streets, drainage systems, craft production and standardised weights. Archaeological evidence indicates extensive trade networks, including contacts with regions to the west. The script remains undeciphered, so claims about political institutions, language and religious practice require caution.
+
+Mesopotamia developed between the Tigris and Euphrates rivers in a region that includes modern Iraq and neighbouring areas. City-states, irrigation agriculture, writing systems and long-distance exchange shaped its history. Cuneiform was used for administrative records, literature, legal texts and correspondence. The development of writing was not a single isolated invention; it evolved through practical recording needs and later supported more varied forms of communication.
+
+The ancient Mediterranean connected Egypt, the Levant, Greece, Phoenician trading cities and later Rome. Maritime routes carried grain, metals, pottery, textiles and ideas. Trade did not simply move goods; it also moved techniques, languages, religious practices and political influence. Port cities became places where different communities interacted, sometimes cooperatively and sometimes through conflict or unequal power.
+
+6.2 Indian history: empires and cultural exchange
+-------------------------------------------------
+
+The Maurya Empire emerged in the fourth century BCE and reached a large extent under Ashoka. Ashokan inscriptions, distributed across the subcontinent, provide important evidence about royal communication, ethical policy and administration. After the Kalinga war, Ashoka's inscriptions emphasised dhamma and restraint, although historians debate how consistently these ideals shaped policy. Inscriptions are valuable primary sources, but they represent the perspective and priorities of the ruler who commissioned them.
+
+The Gupta period is associated with developments in literature, mathematics, astronomy, art and political organisation. The label 'Golden Age' is often used, but it can obscure differences across regions and social groups. Cultural achievements did not mean that every person experienced prosperity or equal access to education and power. Historical interpretation should distinguish the achievements of courts and learned communities from the lived experience of the wider population.
+
+The Chola dynasty developed influential political and commercial networks in southern India. Chola rulers supported temple construction, irrigation works and overseas expeditions. Inscriptions provide information about land grants, taxation, local institutions and religious endowments. Temples were not only places of worship; in many contexts they also functioned as economic and social institutions, holding land, employing specialists and participating in local exchange.
+
+6.3 Industrialisation and modern political change
+-------------------------------------------------
+
+The Industrial Revolution began in Britain in the eighteenth century and spread unevenly to other regions. Mechanised textile production, steam power, coal, iron and transport improvements changed manufacturing and economic organisation. Industrialisation increased output and urban growth, but it also produced harsh working conditions, pollution and new forms of inequality. Its consequences differed by class, gender, region and access to political power.
+
+Colonial rule reshaped economies through taxation, trade policy, resource extraction, infrastructure and administrative change. Railways and ports could support mobility and commerce while also serving imperial priorities. A balanced historical account examines both the material changes introduced during colonial rule and the unequal power relations under which they occurred. It should avoid treating a single technology or institution as proof of an entirely positive or negative historical outcome.
+
+The Indian independence movement involved a wide range of organisations, ideologies and methods. Constitutional reform, mass mobilisation, non-cooperation, civil disobedience, revolutionary activity, labour movements and regional campaigns all contributed to political change. Mahatma Gandhi's leadership made non-violent mass action internationally prominent, but the movement cannot be reduced to one individual or one strategy. Historians examine local participation, social reform, economic pressures and international conditions alongside national leadership.
+
+6.4 Historical method and evidence
+----------------------------------
+
+Primary sources are materials created during the period being studied, such as letters, inscriptions, official records, photographs and artefacts. Secondary sources interpret and analyse evidence, often using multiple primary sources. A primary source is not automatically accurate or unbiased. A royal inscription may exaggerate a victory, a private letter may reflect limited knowledge, and an official report may omit the experiences of marginalised groups.
+
+Chronology establishes the sequence of events, but sequence alone does not prove causation. If a new tax is introduced before a rebellion, the tax may have contributed to unrest, but historians should examine other pressures such as harvest failure, political legitimacy, military conflict and local grievances. Multiple causes can interact, and different groups may experience the same event in different ways.
+
+Historical period labels are analytical tools. Terms such as ancient, medieval and modern can help organise teaching, but boundaries differ across regions and scholarly traditions. A date that marks a major political transition in one area may have little immediate significance elsewhere. Good historical writing identifies the scope of a claim and avoids presenting a regional chronology as universal.
+
+
+==============================================================================
+7. FINANCE AND ACCOUNTING
+==============================================================================
+
+7.1 Banking, interest and lending
+---------------------------------
+
+Simple interest is calculated on the original principal for each period. Compound interest is calculated on the principal plus accumulated interest, so interest can itself earn interest. For a principal P, annual rate r and n years, annual compounding gives A = P(1 + r)^n. The effective outcome also depends on compounding frequency, fees, taxes and whether the rate is fixed or variable. Comparing loans requires more than comparing headline rates.
+
+A loan's principal is the amount borrowed, while interest is the cost of borrowing. An amortising loan uses scheduled payments to reduce both interest and principal over time. Early payments may contain a larger interest component because the outstanding balance is higher. A prepayment can reduce future interest, but the benefit depends on fees, remaining term, rate structure and alternative uses of the money. Borrowers should review the complete repayment schedule and contract conditions.
+
+A bank deposit is a liability of the bank and an asset of the depositor. A bank uses funding and capital to support lending and other activities while managing liquidity, credit and market risks. Deposit protection arrangements vary by jurisdiction and have limits and eligibility conditions. Customers should verify the applicable scheme rather than assume that every account balance or investment product is protected in the same way.
+
+7.2 Accounting statements and cash flow
+---------------------------------------
+
+The income statement reports revenue, expenses and profit over a period. The balance sheet reports assets, liabilities and equity at a point in time. The cash-flow statement explains movements in cash through operating, investing and financing activities. Profit and cash flow can differ because revenue may be recognised before payment is received, and expenses may be recognised before cash is paid. A profitable business can still experience a cash shortage if customers pay slowly or inventory absorbs working capital.
+
+Depreciation allocates the cost of a tangible asset over its useful life for accounting purposes. It does not directly represent the asset's market value or the cash spent in the current period. Different depreciation methods allocate expense differently. Tax depreciation rules may also differ from financial-reporting rules. Analysts should understand which basis is being used before comparing reported profit across companies.
+
+Working capital is commonly calculated as current assets minus current liabilities. Inventory, receivables and payables influence how much cash is tied up in day-to-day operations. A company may improve cash flow by collecting invoices sooner, managing inventory more effectively or negotiating appropriate supplier terms. Delaying payment beyond agreed terms can harm supplier relationships and is not a sustainable substitute for operational improvement.
+
+7.3 Investment risk and diversification
+---------------------------------------
+
+An investment's expected return is uncertain. Risk may arise from market prices, interest rates, credit quality, currency movements, liquidity, concentration or changes in regulation. Diversification spreads exposure across assets that do not move identically, potentially reducing portfolio-specific risk. It cannot eliminate all risk, especially when markets fall together or when the portfolio is concentrated in a single economic factor.
+
+A bond is a debt instrument that typically promises periodic interest and repayment of principal under specified conditions. Bond prices generally move inversely to market yields: when required yields rise, existing fixed payments become less attractive and the bond's market price tends to fall. Duration estimates sensitivity to yield changes, although it is an approximation and does not capture every risk. Credit quality and liquidity also matter.
+
+An equity share represents ownership in a company. Shareholders may benefit from dividends and price appreciation, but neither is guaranteed. A company's earnings can be affected by competition, costs, regulation, management decisions and economic conditions. Past returns are historical observations, not promises of future performance. Investment decisions should reflect goals, time horizon, liquidity needs, risk capacity and applicable local rules.
+
+
+==============================================================================
+8. BUSINESS OPERATIONS AND PROJECT MANAGEMENT
+==============================================================================
+
+8.1 Project scope, schedule and delivery
+----------------------------------------
+
+A project is a temporary endeavour undertaken to create a defined product, service or result. Scope describes what is included and, just as importantly, what is excluded. A scope statement should identify deliverables, assumptions, constraints, acceptance criteria and dependencies. Uncontrolled scope growth can consume budget and time without a corresponding agreement on value. Change control provides a transparent way to assess the effect of proposed changes before committing resources.
+
+A work breakdown structure decomposes project deliverables into manageable components. Activities can then be sequenced based on dependencies and estimated durations. The critical path is the longest-duration path through a project network and determines the earliest possible completion date under the model's assumptions. A delay on a critical activity can delay the project unless corrective action changes the sequence, duration or available resources.
+
+A project status report should communicate progress against an agreed baseline. It should distinguish completed work from work that is merely started, identify risks and issues, and explain decisions needed from sponsors. A green status based only on a team's confidence can hide objective schedule slippage. Useful reporting includes measurable indicators, forecast completion dates and the assumptions behind them.
+
+8.2 Process improvement and quality
+-----------------------------------
+
+A business process transforms inputs into outputs for a customer or another process. Process mapping makes steps, decisions, handoffs and rework visible. A process may appear efficient within one department while creating delays elsewhere. For example, a purchasing team may reduce its own processing time by requesting additional approvals, but those approvals may lengthen the end-to-end procurement cycle. Improvement should optimise the whole value stream rather than one isolated activity.
+
+The Plan-Do-Check-Act cycle supports iterative improvement. Plan identifies an issue and proposes a change; Do tests the change; Check evaluates the result against evidence; Act standardises a successful change or revises the approach. A pilot helps limit risk, but it should be representative enough to reveal operational effects. A result observed in one small team may not transfer directly to a high-volume or differently regulated environment.
+
+A key performance indicator should connect to an outcome that matters. Average handling time can help assess service efficiency, but reducing it aggressively may increase repeat contacts or unresolved cases. First-contact resolution, customer satisfaction, quality audits and employee workload provide additional context. Measures can change behaviour, so organisations should anticipate unintended incentives before using a metric for performance management.
+
+8.3 Procurement, inventory and supply chains
+--------------------------------------------
+
+Procurement includes identifying needs, selecting suppliers, negotiating terms, issuing orders and managing supplier performance. The lowest quoted price may not represent the lowest total cost. Evaluation may include quality, delivery reliability, warranty, support, compliance, switching costs and exposure to supply disruption. A transparent procurement process records evaluation criteria and manages conflicts of interest.
+
+Inventory serves as a buffer between supply and demand, but it ties up capital and may become obsolete or expire. Reorder point models consider expected demand during lead time and may include safety stock to protect against variability. If supplier lead times become longer or less predictable, a previously adequate reorder point may no longer protect service levels. Inventory parameters should be reviewed when demand patterns, supplier performance or product life cycles change.
+
+A supply chain includes suppliers, manufacturers, logistics providers, distributors and customers. A disruption at one node can propagate through the network. Resilience strategies include alternative suppliers, geographic diversification, visibility into sub-tier suppliers, strategic inventory and flexible production. Each strategy has a cost. The appropriate design balances efficiency with the consequences of interruption and the time required to recover.
+
+
+==============================================================================
+9. MATHEMATICS AND LOGICAL REASONING
+==============================================================================
+
+9.1 Algebra and functions
+-------------------------
+
+An equation states that two expressions have equal value. Solving an equation means finding values of the unknowns that make the equality true. A linear equation in one variable has the form ax + b = 0, where a is non-zero. Rearranging the equation requires applying equivalent operations to both sides. Dividing by a variable expression requires checking that the expression is not zero, otherwise a valid solution may be lost or an invalid one introduced.
+
+A function maps each input in its domain to exactly one output. The notation f(x) represents the output associated with input x. A function can be represented by a formula, table, graph or verbal rule. Domain restrictions matter: a denominator cannot be zero, and a real-valued square root requires a non-negative radicand. Two formulas that look similar may have different domains and therefore define different functions.
+
+A linear model can be useful when the relationship between variables is approximately constant over the relevant range. If a taxi fare contains a fixed starting charge and a constant rate per kilometre, total fare can be represented by a straight-line equation. However, real tariffs may include waiting charges, minimum fares, peak pricing and zone rules. A simple model is useful only when its assumptions are understood.
+
+9.2 Ratios, units and dimensional analysis
+------------------------------------------
+
+A ratio compares quantities by division. If a concrete mix contains cement, sand and aggregate in a stated ratio, the ratio alone does not specify the total quantity; a batch size is also needed. Ratios can be scaled while preserving proportions. Percentages are ratios expressed per hundred, but percentage points and percent change are different. An increase from 10 percent to 15 percent is five percentage points and a 50 percent relative increase.
+
+Dimensional analysis checks whether units are consistent in an equation. Speed has dimensions of length divided by time, while acceleration has dimensions of length divided by time squared. Adding a distance measured in metres to a duration measured in seconds is not meaningful without a conversion or model that relates them. Unit checks are a simple way to catch errors in engineering calculations, spreadsheets and software.
+
+A rate describes one quantity relative to another, such as litres per minute, kilometres per hour or cases per thousand people. Rates should state their denominator and time period. Saying that a service has 12 incidents is incomplete without knowing whether this means 12 incidents per day, month, thousand transactions or million requests. The denominator can change the interpretation entirely.
+
+9.3 Logic and decision rules
+----------------------------
+
+A logical statement is either true or false within a specified interpretation. The statement 'if the sensor exceeds the threshold, raise an alert' defines a conditional rule. It does not imply that every alert is a confirmed failure; it means only that the configured condition has been met. Decision systems should distinguish a trigger, an inference and a final action.
+
+An AND condition is true only when all included conditions are true. An OR condition is true when at least one condition is true. In a security rule, access might require a valid identity AND an approved device, while an emergency override may be allowed for one of several separately defined conditions. Parentheses make complex rules easier to read and prevent ambiguity about precedence.
+
+A decision table lists combinations of conditions and the actions associated with them. It can expose missing cases, contradictory rules and unintended overlaps. For example, a refund policy may depend on delivery status, elapsed time and product condition. Testing only the common case leaves boundary cases unexamined. A complete table helps testers verify that each meaningful combination produces the intended result.
+
+
+==============================================================================
+10. ENVIRONMENT, ENERGY AND SUSTAINABILITY
+==============================================================================
+
+10.1 Renewable and non-renewable energy
+---------------------------------------
+
+Solar photovoltaic panels convert light into electrical energy through semiconductor materials. Their output depends on irradiance, panel orientation, temperature, shading, inverter performance and system condition. Solar generation varies during the day and across seasons. Batteries can shift some energy from periods of generation to periods of demand, but storage introduces cost, conversion losses, degradation and material requirements.
+
+Wind turbines convert kinetic energy in moving air into rotational mechanical energy and then electricity. Power availability depends strongly on wind speed, and turbines have operating limits for very low and very high winds. Site assessment considers wind distribution, terrain, grid access, ecological effects, noise and community concerns. A wind farm's annual energy production is not the same as its nameplate capacity multiplied by every hour in a year.
+
+Coal, oil and natural gas are fossil fuels formed from ancient organic matter. Their combustion releases energy and carbon dioxide, along with pollutants that depend on fuel composition and control technology. Nuclear power uses energy released from changes in atomic nuclei and has low operational greenhouse-gas emissions, but it requires stringent safety, waste-management and security arrangements. Energy choices involve reliability, cost, environmental impacts, infrastructure and public policy.
+
+10.2 Climate mitigation and adaptation
+--------------------------------------
+
+Climate mitigation reduces greenhouse-gas emissions or increases removals. Measures include energy efficiency, low-carbon electricity, electrification, methane reduction, industrial process changes and protection or restoration of carbon-rich ecosystems. Adaptation reduces harm from climate impacts that are occurring or expected. Examples include heat-action plans, flood-resilient infrastructure, drought planning and crop varieties suited to changing conditions. Mitigation and adaptation address different parts of the problem and are both necessary.
+
+A city's heat risk depends on temperature, humidity, urban form, tree cover, building materials, access to cooling and the vulnerability of residents. Dark surfaces absorb and retain heat, while vegetation can provide shade and evaporative cooling. Heat exposure is not distributed equally: outdoor workers, older adults, people with certain illnesses and households without reliable cooling may face greater risk. Planning should combine environmental data with social vulnerability assessments.
+
+A carbon footprint estimates greenhouse-gas emissions associated with an activity, product, organisation or person. Results depend on system boundaries, data quality, allocation methods and emission factors. A product footprint that includes manufacturing but excludes transport and end-of-life treatment is not directly comparable with one that includes the full life cycle. Transparent assumptions are essential when communicating environmental claims.
+
+10.3 Waste, water and circular economy
+--------------------------------------
+
+The waste hierarchy generally prioritises prevention, reuse and recycling over energy recovery and disposal. Preventing waste can avoid material extraction and processing as well as end-of-life impacts. Recycling is valuable, but it requires collection, sorting, suitable material quality and a market for recovered material. A product described as recyclable may not be recycled in practice if local infrastructure does not accept it.
+
+A circular economy aims to keep products and materials in use through durability, repair, reuse, remanufacturing and recycling. It challenges the linear pattern of take, make and dispose. Circular design may use replaceable components, standard fasteners, repair documentation and materials that can be separated at end of life. Business models such as leasing or product-as-a-service can create incentives for durability, although their environmental benefit depends on actual use and logistics.
+
+Water management includes protecting source water, treating supplies, distributing water, collecting wastewater and managing stormwater. Treatment processes may include screening, sedimentation, filtration and disinfection. The appropriate process depends on source quality and intended use. Industrial reuse can reduce freshwater demand, but water quality must match the application and avoid creating health or corrosion risks. Water scarcity is often a governance and infrastructure problem as well as a physical shortage.
+
+
+==============================================================================
+11. CROSS-DOMAIN TERMINOLOGY AND SEMANTIC AMBIGUITY
+==============================================================================
+
+11.1 The word 'model'
+---------------------
+
+In artificial intelligence, a model is a mathematical or computational representation learned or specified to make predictions, classify inputs or generate outputs. A language model estimates patterns in sequences of tokens and can produce text based on context. Model performance is evaluated using task-appropriate metrics and representative data.
+
+In engineering, a model may be a simplified physical or mathematical representation of a system. A structural model approximates how loads move through members; a fluid model may represent pressure and flow. Every model makes assumptions, and those assumptions determine where its predictions are reliable.
+
+In business, a business model explains how an organisation creates, delivers and captures value. It may describe customer segments, channels, partners, costs and revenue streams. A subscription business model differs from a one-time sales model even if both organisations sell similar software.
+
+In fashion, a model is a person who presents clothing or products. In education, a role model is someone whose behaviour others may imitate. A semantic chunker should not assume that every use of the word 'model' belongs to machine learning simply because the document also contains technical material.
+
+11.2 The word 'cell'
+--------------------
+
+In biology, a cell is the basic structural and functional unit of living organisms. Cells contain structures that carry out processes such as energy conversion, protein synthesis and information storage.
+
+In a spreadsheet, a cell is the intersection of a row and a column. It can contain a number, text, formula or date. A formula may refer to other cells, and an incorrect reference can change a financial forecast without producing an obvious error message.
+
+In telecommunications, a cell is a geographic coverage area served by a base station or sector. Cellular networks reuse radio frequencies across separated areas to support many users while managing interference.
+
+In a prison, a cell is a room where a person is confined. In a battery, a cell is an electrochemical unit that converts chemical energy into electrical energy. Context, neighbouring terms and document structure are necessary to select the correct meaning.
+
+11.3 The words 'stress', 'pressure' and 'resistance'
+----------------------------------------------------
+
+In structural engineering, stress is internal force per unit area within a material. Pressure is force applied per unit area, often by a fluid or gas. Although they share the same physical units, their contexts and sign conventions may differ.
+
+In psychology, stress refers to a response to demands or perceived challenges. The term may describe an experience, a physiological response or a broader pattern of strain. It should not be confused with mechanical stress in a beam.
+
+In electrical engineering, resistance measures opposition to electric current and is expressed in ohms. In healthcare, antibiotic resistance describes the ability of microorganisms to withstand medicines that would otherwise inhibit or kill them. The shared word does not imply a shared mechanism.
+
+In sales, price pressure describes downward pressure on a seller's price or margin. In fluid mechanics, pressure is a measurable state variable. A paragraph that moves from sales negotiation to fluid pressure represents a topic transition even though the same word appears.
+
+11.4 The words 'risk', 'value' and 'current'
+--------------------------------------------
+
+Financial risk may refer to uncertainty in returns, credit losses or liquidity. Engineering risk may refer to the combination of likelihood and consequence of harm or failure. Medical risk may describe the probability of an outcome over a specified period for a defined population.
+
+In mathematics, a value is the result assigned to a variable or expression. In business, value may mean customer-perceived benefit relative to cost. In electrical systems, voltage is sometimes informally called electrical potential, but the word 'current' refers to the flow of electric charge rather than a present event.
+
+In everyday language, current means happening now. In electrical engineering, current is measured in amperes. In geography, a current can be a directed flow of ocean water. In finance, current assets are assets expected to be converted to cash, sold or consumed within the operating cycle or specified reporting period.
+
+
+==============================================================================
+12. INTEGRATED CASE STUDIES AND TOPIC-BOUNDARY TESTS
+==============================================================================
+
+12.1 Hospital expansion project
+-------------------------------
+
+A regional hospital plans to add a diagnostic wing. The engineering team investigates soil conditions, designs foundations and checks the existing building for construction effects. The electrical team assesses backup power and the separation of essential circuits. The mechanical team sizes ventilation and cooling equipment while considering infection-control requirements. The project manager coordinates procurement, approvals, commissioning and clinical stakeholder reviews.
+
+The hospital's finance team evaluates capital cost, operating cost and the expected useful life of equipment. Procurement compares suppliers on compliance, reliability, service coverage and total cost rather than purchase price alone. The clinical team validates whether rooms, equipment and workflows support patient care. A building can satisfy engineering calculations and still fail operational validation if staff cannot move patients or equipment safely through the proposed layout.
+
+This case combines engineering, finance, healthcare and project management, but the topics should not be merged indiscriminately. A paragraph about soil bearing capacity belongs primarily to geotechnical engineering. A paragraph about clinical workflow belongs to healthcare operations. The project context connects them at a higher level, while local semantic boundaries remain meaningful.
+
+12.2 Retail company deploying an AI assistant
+---------------------------------------------
+
+A retailer wants an AI assistant to answer questions about orders, delivery, returns and product information. The technology team designs an API that retrieves order status from a database. The security team defines authentication and authorisation. The customer-service team writes approved policy content, and the sales team identifies opportunities to recommend related products where appropriate.
+
+The retrieval system stores document chunks with metadata such as source, version, topic and effective date. A query about a return deadline should retrieve the relevant policy rather than a marketing page that happens to mention returns. If two policies conflict, the assistant should prefer the authoritative current source or explain that the documents disagree. It should not combine unrelated rules into a confident answer.
+
+Evaluation includes questions with direct answers, paraphrases, misspellings, ambiguous terms and no-answer cases. A query about 'current order' may mean an order that is active, not electrical current. A query about a 'model number' may refer to a product identifier rather than a machine-learning model. Retrieval tests should record the expected source and acceptable evidence, not merely whether the generated answer sounds plausible.
+
+12.3 Coastal city resilience programme
+--------------------------------------
+
+A coastal city assesses flood exposure, drainage capacity, building vulnerability and emergency response. Civil engineers evaluate embankments and pumping stations. Environmental specialists examine wetlands and coastal ecosystems. Public-health teams plan heat and flood response, while finance officials compare lifecycle costs and funding options. Residents contribute local knowledge about recurring flood locations and barriers to evacuation.
+
+The programme uses geographic information systems to combine elevation, rainfall, land use, population and infrastructure data. A map layer is not automatically reliable because it is digital; its source, resolution, date and coordinate reference system must be checked. A flood model depends on assumptions about rainfall, drainage, tides, land cover and boundary conditions. Results should be communicated with uncertainty and scenario limits.
+
+The word 'adaptation' in this programme refers to adjusting systems to climate impacts. In machine learning, adaptation may refer to modifying a model for a new task or dataset. Both uses concern change in response to conditions, but their methods and success measures are different. A semantic chunker should keep the surrounding domain cues with the term.
+
+12.4 Manufacturing quality investigation
+----------------------------------------
+
+A factory observes an increase in rejected metal components. The quality team separates defects by machine, shift, material batch and product type. Engineers inspect tooling alignment, temperature, vibration and measurement calibration. Statistical process control charts help determine whether the process has changed beyond expected variation. A single point outside a control limit is a signal for investigation, not a complete root-cause explanation.
+
+The finance team estimates scrap and rework cost, while procurement reviews whether a supplier's material properties changed. Operations considers whether a schedule change increased machine utilisation or reduced maintenance time. A corrective action is tested on a controlled batch and verified against defined acceptance criteria. If the intervention works, the updated method is documented and monitored to ensure the improvement persists.
+
+The term 'control' has different meanings across this case. Statistical process control monitors process variation. A control plan specifies checks and reactions. Financial control concerns budgets and authorisation. A machine controller adjusts physical operation. These ideas are related through management and regulation, but they are not interchangeable.
+
+
+==============================================================================
+13. STRUCTURED REFERENCE MATERIAL
+==============================================================================
+
+13.1 Engineering quantities and units
+-------------------------------------
+
+The following reference values are illustrative unit reminders, not design limits. Actual engineering work must use applicable codes, project specifications and verified material data.
+
+Quantity | Common symbol | SI unit | Example context
+Length | L | metre (m) | Beam span or pipe length
+Mass | m | kilogram (kg) | Equipment mass
+Force | F | newton (N) | Applied structural load
+Pressure | p | pascal (Pa) | Fluid pressure
+Energy | E | joule (J) | Work or heat transfer
+Power | P | watt (W) | Motor output
+Electric current | I | ampere (A) | Circuit load
+Voltage | V | volt (V) | Supply potential difference
+Resistance | R | ohm (Ω) | Circuit component
+Temperature | T | kelvin (K) or degree Celsius (°C) | Process condition
+
+A unit table can be a useful semantic unit in its own right. A chunking algorithm should avoid separating a quantity from the explanation that defines its symbol or unit. At the same time, a large reference table may need to be split by logical row groups if the retrieval system has a strict context limit. Repeating the table title and column headings in each resulting fragment can preserve meaning.
+
+13.2 Example project risk register
+----------------------------------
+
+Risk ID | Description | Likelihood | Impact | Planned response
+R-01 | Ground conditions differ from the preliminary survey | Medium | High | Complete additional investigation before final foundation design
+R-02 | Critical equipment delivery is delayed | Medium | High | Confirm supplier milestones and identify an approved alternative
+R-03 | Data migration produces duplicate customer records | Medium | Medium | Reconcile identifiers and run a controlled migration test
+R-04 | Staff do not adopt the new workflow | High | Medium | Involve users in design and provide role-based training
+R-05 | Backup power fails during commissioning | Low | High | Test the full transfer and generator system under load
+
+Likelihood and impact labels are qualitative categories whose definitions should be documented. A risk register records uncertainty and planned responses; an issue log records a problem that has already occurred. The two registers may be linked, but they serve different purposes. An issue can create new risks, and a risk can become an issue when the uncertain event occurs.
+
+13.3 Sales funnel example
+-------------------------
+
+Stage | Starting count | Progressed to next stage | Stage conversion
+New leads | 1,000 | 300 qualified | 30%
+Qualified | 300 | 150 discovery completed | 50%
+Discovery completed | 150 | 75 proposals issued | 50%
+Proposal issued | 75 | 24 wins | 32%
+Overall lead-to-win | 1,000 | 24 wins | 2.4%
+
+These figures are illustrative. The stage conversion values are meaningful only if the records belong to a consistent cohort and each stage has a stable definition. If opportunities remain open at the end of the measurement period, the calculation should account for that censoring or clearly state the reporting convention.
+
+13.4 Sample decision table for a service request
+------------------------------------------------
+
+Conditions:
+- Request is complete: Yes or No
+- User identity is verified: Yes or No
+- Requested item is available: Yes or No
+
+Rule A: If identity is not verified, stop processing and request verification.
+Rule B: If identity is verified but the request is incomplete, ask for the missing information.
+Rule C: If identity is verified, the request is complete and the item is available, proceed with fulfilment.
+Rule D: If identity is verified and the request is complete but the item is unavailable, explain the limitation and provide the approved alternative if one exists.
+
+The order of evaluation matters. A request should not be fulfilled merely because an item is available if the user's identity has not been verified. This is an example of a precedence rule: security conditions must be checked before availability is acted upon. Test cases should include every combination, including contradictory or missing inputs.
+
+
+==============================================================================
+14. MINI GLOSSARY WITH DOMAIN-SPECIFIC MEANINGS
+==============================================================================
+
+14.1 Terms that change meaning by domain
+----------------------------------------
+
+API — In software, an application programming interface defines how components communicate. In some medical contexts, API can refer to an active pharmaceutical ingredient. The abbreviation must be expanded using domain context.
+
+Bridge — In civil engineering, a structure carries transport or utilities across an obstacle. In networking, a bridge connects network segments at the data-link layer. In dentistry, a bridge replaces one or more missing teeth. In finance, a bridge loan is short-term financing.
+
+Capital — In finance, capital may mean funds invested or available to a business. In geography and politics, a capital is a city serving as a seat of government. In typography, a capital letter is an uppercase letter. In engineering, capital equipment refers to long-lived assets.
+
+Culture — In biology, a culture is a population of microorganisms or cells grown under controlled conditions. In sociology, culture includes shared practices, beliefs and meanings. In organisations, workplace culture describes norms and behaviours that influence how people work.
+
+Depression — In medicine, depression can refer to a mental-health disorder or a depressed anatomical area. In economics, a depression is a severe and prolonged downturn. In geography, a depression is a low-lying landform. The intended meaning depends on the surrounding explanation.
+
+Margin — In finance, margin may refer to profit margin or borrowed funds used to buy securities. In page layout, a margin is blank space around content. In engineering, a safety margin represents reserve capacity above a defined requirement.
+
+Memory — In computing, memory stores data for processing. In human cognition, memory refers to encoding, retaining and retrieving information. In materials science, shape-memory materials can return toward a previously defined shape under suitable conditions.
+
+Network — In computing, a network connects devices for communication. In social science, a network describes relationships among people or organisations. In transport, a network is a connected set of routes. A graph can represent all three, but the nodes and edges mean different things.
+
+Power — In physics, power is the rate of energy transfer. In politics, power is the capacity to influence decisions. In business, market power describes an organisation's ability to influence price or terms. In computing, a power supply converts electrical energy for system components.
+
+Stress — In engineering, stress is force per unit area. In psychology, stress describes a response to demands. In linguistics, stress is emphasis placed on a syllable or word. A sentence about stress testing a server uses the term in a performance-testing sense.
+
+Token — In natural-language processing, a token is a unit used to represent text. In authentication, a token is a credential or proof of authority. In economics, a token may represent a unit of value or access. A token can also be a physical object used in place of money.
+
+Vector — In mathematics and physics, a vector has magnitude and direction. In biology, a vector can transmit a pathogen between hosts. In computing, a vector may be an ordered array of values. In graphic design, vector artwork uses paths and shapes rather than a fixed pixel grid.
+
+14.2 Definitions and examples
+-----------------------------
+
+A hypothesis is a proposed explanation that can be examined through evidence. In scientific research, a hypothesis should generate testable expectations. In software debugging, a hypothesis might be that a memory leak is caused by an unclosed resource. In a business investigation, it might be that a change in pricing reduced conversion. The term is shared, but the methods of testing differ.
+
+A baseline is a reference point for comparison. An engineer may use a baseline survey before construction. A software team may record baseline latency before optimisation. A sales manager may compare current conversion with a baseline quarter. A baseline must identify the measurement method, period and conditions; otherwise, later comparisons can be misleading.
+
+A threshold is a boundary used to trigger a classification or action. A medical laboratory may define a reference threshold for a test. A network monitor may alert when latency exceeds a configured threshold. A credit policy may require review when exposure passes a limit. Thresholds should be validated because small changes can affect false positives and false negatives.
+
+A protocol is a defined set of rules for communication or action. Network protocols specify how systems exchange data. A clinical protocol may define a care pathway. A laboratory protocol describes a procedure. A diplomatic protocol governs formal interactions. The shared idea is an agreed procedure, but the content and authority of each protocol are domain-specific.
+
+15. VALIDATION GUIDE FOR SEMANTIC CHUNKING
+
+15.1 Suggested evaluation questions
+Use the document to test whether the chunker:
+- Keeps a heading with the paragraphs that explain it.
+- Separates unrelated domains when the subject changes.
+- Preserves a multi-paragraph explanation when later paragraphs depend on earlier context.
+- Avoids splitting a definition from its example.
+- Keeps table headings with their rows, or repeats headings when a table must be split.
+- Preserves numbered procedures and decision rules in their correct order.
+- Distinguishes identical words used with different meanings.
+- Avoids treating every paragraph in a shared case study as one undifferentiated topic.
+- Produces chunks that are neither excessively short nor unnecessarily broad.
+- Retains source and section metadata for traceability.
+
+15.2 Suggested retrieval test queries
+1. Why can a saturated clay foundation continue to settle after construction?
+2. What is the difference between structural strength and serviceability?
+3. How does a circuit breaker contribute to electrical protection?
+4. Why can cavitation damage a centrifugal pump?
+5. What is the difference between verification and validation?
+6. How do database indexes affect reads and writes?
+7. Why is a language-model answer only as reliable as the evidence retrieved?
+8. What is the difference between authentication and authorisation?
+9. Why do antibiotics not treat ordinary viral infections?
+10. How can HbA1c be affected by conditions involving red blood cells?
+11. Why is a sales conversion rate meaningless without a defined denominator?
+12. What is the difference between a sales forecast and a confirmed outcome?
+13. How does climate differ from weather?
+14. Why does correlation not prove causation?
+15. What are the limitations of using GDP per person as a wellbeing measure?
+16. What can inscriptions reveal about the Maurya Empire, and what are their limitations?
+17. How do primary and secondary historical sources differ?
+18. Why can a profitable business still have a cash shortage?
+19. What is the relationship between duration and bond-price sensitivity?
+20. How does a critical path affect a project completion date?
+21. Why can a lower inventory level increase supply-chain risk?
+22. What is the difference between accuracy and precision?
+23. How does a conditional rule differ from a confirmed diagnosis?
+24. What does a carbon footprint depend on?
+25. How should a retrieval system distinguish a machine-learning model from a structural model?
+26. What does the word cell mean in biology, spreadsheets and telecommunications?
+27. How does the meaning of stress differ in engineering and psychology?
+28. In the hospital expansion case, which activities belong to engineering and which belong to clinical validation?
+29. Why should a retailer's assistant retrieve the current return policy rather than a marketing page?
+30. What is the difference between a risk and an issue in project management?
+
+15.3 Boundary and adversarial test queries
+- Explain electrical current, not current events.
+- Find information about a business model, not a machine-learning model.
+- Explain cell division, not spreadsheet cells.
+- Compare antibiotic resistance with electrical resistance.
+- Explain stress in a steel beam, not psychological stress.
+- What does margin mean in a financial statement, not page layout?
+- Find the meaning of a vector in machine learning, not disease transmission.
+- Explain a bridge in computer networking, not civil construction.
+- What does capital mean in a balance sheet, not a capital city?
+- Explain a token in text processing, not an authentication credential.
+
+15.4 What to record for each experiment
+For each chunking strategy, record:
+- Chunk identifier and source section.
+- Character count and token count.
+- Start and end headings.
+- Whether the chunk contains a complete thought.
+- Whether it crosses an unrelated topic boundary.
+- Whether context required by the chunk is missing.
+- Whether a table, list or procedure remains interpretable.
+- Retrieval rank for each test query.
+- Whether the expected evidence is present in the retrieved context.
+- Whether irrelevant neighbouring content dominates the chunk.
+
+15.5 Interpreting results
+A semantic chunker should not be judged solely by producing chunks of similar length. Its purpose is to create retrievable units that preserve meaning and useful context. Very short chunks may have high topical purity but lack enough context to answer a question. Very long chunks may preserve context but retrieve unrelated material and consume the model's context window. The preferred result is a practical balance between semantic coherence, contextual completeness, retrieval precision and operational cost.
+
+Use the same source document, embedding model, metadata strategy, retrieval settings and evaluation queries when comparing chunking approaches. Change one major variable at a time. Human review remains important: automated similarity scores can identify likely boundaries, but they cannot fully determine whether a procedure, exception or qualification has been separated from the statement it modifies.
+
+END OF DOCUMENT
