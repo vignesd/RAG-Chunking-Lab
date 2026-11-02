@@ -5,20 +5,26 @@ from .chunkers.agentic import agentic_chunk
 from .chunkers.fixed_size import fixed_chunk
 from .chunkers.markdown import document_chunk
 from .chunkers.recursive import recursive_chunk
-from .chunkers.semantic import semantic_chunk
+from .chunkers.semantic import (
+    semantic_chunk,
+    semantic_chunk_similarity,
+    semantic_chunk_hybrid,
+)
 from .logging_config import setup_logging
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_FILE = PROJECT_ROOT / "data" / "examples" / \
-    "semantic_text.txt"
+    "semantic_short.txt"
 
 STRATEGIES: dict[int, tuple[str, Callable[[str], object]]] = {
     1: ("Fixed Chunking", fixed_chunk),
     2: ("Recursive Chunking", recursive_chunk),
     3: ("Markdown-Aware Chunking", document_chunk),
-    4: ("Semantic Chunking (OpenAI)", semantic_chunk),
-    5: ("Agentic Chunking (OpenAI)", agentic_chunk),
+    4: ("Semantic Chunking (Langchain)", semantic_chunk),
+    5: ("Semantic Chunking (Cosin Similarity)", semantic_chunk_similarity),
+    6: ("Semantic Chunking (Hybird)", semantic_chunk_hybrid),
+    7: ("Agentic Chunking (OpenAI)", agentic_chunk),
 }
 
 MENU_PROMPT = """\
@@ -26,8 +32,10 @@ Choose a chunking strategy (1-5):
 1. Fixed Chunking
 2. Recursive Chunking
 3. Markdown-Aware Chunking
-4. Semantic Chunking (OpenAI)
-5. Agentic Chunking (OpenAI)
+4. Semantic Chunking (Langchain)
+5. Semantic Chunking (Cosin Similarity)
+6. Semantic Chunking (Hybird)
+7. Agentic Chunking (OpenAI)
 """
 
 

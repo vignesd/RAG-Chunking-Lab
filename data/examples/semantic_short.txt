@@ -1,0 +1,12 @@
+TOPIC: TECHNOLOGY
+Artificial intelligence refers to computer systems capable of performing tasks that typically require human intelligence, such as understanding language, recognizing images, and making decisions. Machine learning, a subset of AI, allows systems to improve their performance on a task by learning patterns from data rather than following explicitly programmed rules. Deep learning, a further subset, uses layered neural networks to automatically discover complex patterns in large datasets, powering applications like voice assistants, recommendation engines, and image recognition systems.
+
+TOPIC: MEDICAL
+The human digestive system breaks down food into nutrients the body can absorb and use for energy, growth, and cell repair. Digestion begins in the mouth, where chewing and saliva start breaking down food, continues in the stomach with acid and enzymes, and finishes in the small intestine, where most nutrient absorption occurs. The large intestine absorbs water and forms waste for elimination. Conditions like acid reflux, irritable bowel syndrome, and ulcers can disrupt this process and often require dietary changes or medication to manage.
+
+TOPIC: FINANCE
+A budget is a plan that tracks expected income against planned expenses over a given period, helping individuals and organizations avoid overspending and build savings. A common personal finance guideline is the 50/30/20 rule, which suggests allocating 50% of income to needs, 30% to wants, and 20% to savings or debt repayment. Emergency funds, typically covering three to six months of essential expenses, provide a financial buffer against unexpected events like job loss or medical bills.
+
+TOPIC: HISTORY
+The printing press, invented by Johannes Gutenberg around 1440, revolutionized the spread of information by making books faster and cheaper to produce than hand-copied manuscripts. This innovation contributed to rising literacy rates, the spread of new ideas during the Renaissance and Reformation, and the standardization of languages across regions. Before the printing press, books were rare and expensive, limiting access to knowledge mostly to the wealthy and religious institutions.
+
