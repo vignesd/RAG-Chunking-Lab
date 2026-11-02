@@ -1,6 +1,6 @@
 import re
 import math
-from langchain_openai import OpenAIEmbeddings
+
 from langchain_ollama import OllamaEmbeddings
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_core.documents import Document
@@ -14,6 +14,7 @@ embeddings = OllamaEmbeddings(
     base_url="http://localhost:11434",
 )
 
+# from langchain_openai import OpenAIEmbeddings
 # embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
 
@@ -64,9 +65,7 @@ def _calculate_percentile(
         return 1.0
 
     sorted_values = sorted(values)
-
     position = (len(sorted_values) - 1) * percentile / 100
-
     lower_index = math.floor(position)
     upper_index = math.ceil(position)
 
