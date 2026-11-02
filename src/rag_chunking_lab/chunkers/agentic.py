@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from langchain_core.runnables import Runnable
 from langchain_core.documents import Document
-from logger_config import get_logger
+from ..logging_config import get_logger
 
 logger = get_logger(__name__)
 
@@ -18,7 +18,7 @@ class BoundaryDecision(BaseModel):
         description="Brief explanation for why a split is or isn't recommended.")
 
 
-def agentic_chunk_open(text: str) -> list[Document]:
+def agentic_chunk(text: str) -> list[Document]:
     logger.info("Starting Agentic Chunking execution...")
 
     if not os.getenv("OPENAI_API_KEY"):

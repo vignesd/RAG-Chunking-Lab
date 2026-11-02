@@ -2,12 +2,12 @@
 from langchain_openai import OpenAIEmbeddings
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_core.documents import Document
-from logger_config import get_logger
+from ..logging_config import get_logger
 
 logger = get_logger(__name__)
 
 
-def semantic_chunk_lang(text: str) -> list[Document]:
+def semantic_chunk(text: str) -> list[Document]:
     """
     Splits text semantically using LangChain's native SemanticChunker 
     powered by OpenAI embeddings and dynamic percentile breakpoints.

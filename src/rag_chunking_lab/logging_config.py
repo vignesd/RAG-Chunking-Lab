@@ -1,4 +1,6 @@
 
+"""Logging setup for RAG Chunking Lab."""
+
 import logging
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
