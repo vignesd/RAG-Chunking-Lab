@@ -1,3 +1,4 @@
+from __future__ import annotations
 import re
 import math
 
@@ -28,11 +29,15 @@ def _split_sentences(text: str) -> list[str]:
         text,
     )
 
-    return [
+    total_sentences = [
         sentence.strip()
         for sentence in sentences
         if sentence.strip()
     ]
+
+    logger.info(f"Total {len(total_sentences)} sentences")
+
+    return total_sentences
 
 
 def _cosine_distance(vector_a: list[float],
@@ -224,7 +229,7 @@ def semantic_chunk(text: str) -> list[Document]:
     print(f"RESULTS: Generated {len(docs)} Semantic Chunks (LangChain)")
     print("=" * 60)
 
-    for idx, chunk in enumerate(docs[:10], start=1):
+    for idx, chunk in enumerate(docs, start=1):
         print(f"\n[Chunk {idx}] Character Length: {len(chunk.page_content)}")
         print("-" * 40)
         print(chunk.page_content.strip())
@@ -234,7 +239,7 @@ def semantic_chunk(text: str) -> list[Document]:
 
 def semantic_chunk_similarity(
     text: str,
-    breakpoint_percentile: float = 85,
+    breakpoint_percentile: float = 65,
     min_chunk_chars: int = 500,
     max_chunk_chars: int = 2400,
 ) -> list[Document]:

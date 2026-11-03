@@ -10,12 +10,15 @@ from .chunkers.semantic import (
     semantic_chunk_similarity,
     semantic_chunk_hybrid,
 )
+from .chunkers.semantic_chonkie import semantic_chunk_chonkie
+from .chunkers.semantic_llamaindex import semantic_chunk_llamaindex
+
 from .logging_config import setup_logging
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_FILE = PROJECT_ROOT / "data" / "examples" / \
-    "semantic_short.txt"
+    "semantic_text.txt"
 
 STRATEGIES: dict[int, tuple[str, Callable[[str], object]]] = {
     1: ("Fixed Chunking", fixed_chunk),
@@ -24,7 +27,9 @@ STRATEGIES: dict[int, tuple[str, Callable[[str], object]]] = {
     4: ("Semantic Chunking (Langchain)", semantic_chunk),
     5: ("Semantic Chunking (Cosin Similarity)", semantic_chunk_similarity),
     6: ("Semantic Chunking (Hybird)", semantic_chunk_hybrid),
-    7: ("Agentic Chunking (OpenAI)", agentic_chunk),
+    7: ("Semantic Chunking (Chonkie)", semantic_chunk_chonkie),
+    8: ("Semantic Chunking (LlamaIndex)", semantic_chunk_llamaindex),
+    9: ("Agentic Chunking (OpenAI)", agentic_chunk),
 }
 
 MENU_PROMPT = """\
@@ -35,7 +40,9 @@ Choose a chunking strategy (1-5):
 4. Semantic Chunking (Langchain)
 5. Semantic Chunking (Cosin Similarity)
 6. Semantic Chunking (Hybird)
-7. Agentic Chunking (OpenAI)
+7. Semantic Chunking (Chonkie)
+8. Semantic Chunking (LlamaIndex)
+9. Agentic Chunking (OpenAI)
 """
 
 

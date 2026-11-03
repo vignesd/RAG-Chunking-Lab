@@ -27,10 +27,6 @@ DEFAULT_CHUNK_SIZE = 2400
 DEFAULT_THRESHOLD = 85
 
 
-# ---------------------------------------------------------------------
-# Custom Ollama embedding adapter
-# ---------------------------------------------------------------------
-
 class OllamaChonkieEmbeddings(BaseEmbeddings):
     """
     Adapter that allows Chonkie to use LangChain's OllamaEmbeddings.
@@ -242,10 +238,6 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
             )
 
 
-# ---------------------------------------------------------------------
-# Semantic chunking function
-# ---------------------------------------------------------------------
-
 def semantic_chunk_chonkie(
     text: str,
     metadata: dict[str, Any] | None = None,
@@ -360,10 +352,18 @@ def semantic_chunk_chonkie(
                 )
             )
 
-        logger.info(
-            "Chonkie semantic chunking completed. Generated %s chunks.",
-            len(documents),
-        )
+        # logger.info("Chonkie generated %d chunks.", len(documents))
+
+        print("\n" + "=" * 60)
+        print(f"RESULTS: Generated {len(documents)} Semantic Chunks (Chonkie)")
+        print("=" * 60)
+
+        for idx, chunk in enumerate(documents, start=1):
+            print(
+                f"\n[Chunk {idx}] Character Length: {len(chunk.page_content)}")
+            print("-" * 40)
+            print(chunk.page_content.strip())
+            print("-" * 40)
 
         return documents
 

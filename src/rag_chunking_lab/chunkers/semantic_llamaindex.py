@@ -1,7 +1,3 @@
-"""LlamaIndex semantic chunking with local Ollama embeddings.
-
-Install: uv add llama-index-core llama-index-embeddings-ollama langchain-core
-"""
 from __future__ import annotations
 
 from typing import Any
@@ -64,9 +60,19 @@ def semantic_chunk_llamaindex(
             "chunking_method": "llamaindex_semantic",
             "chunk_index": index,
         })
-        documents.append(Document(page_content=content, metadata=node_metadata))
+        documents.append(
+            Document(page_content=content, metadata=node_metadata))
 
     logger.info("LlamaIndex generated %d chunks.", len(documents))
-    for index, doc in enumerate(documents[:10], start=1):
-        logger.info("[LlamaIndex chunk %d] characters=%d", index, len(doc.page_content))
+    print("\n" + "=" * 60)
+    print(f"RESULTS: Generated {len(documents)} Semantic Chunks (LlamaIndex)")
+    print("=" * 60)
+
+    for idx, chunk in enumerate(documents, start=1):
+        print(
+            f"\n[Chunk {idx}] Character Length: {len(chunk.page_content)}")
+        print("-" * 40)
+        print(chunk.page_content.strip())
+        print("-" * 40)
+
     return documents
