@@ -8,38 +8,22 @@ from typing import Any, Callable
 from chonkie import BaseEmbeddings, SemanticChunker
 from langchain_core.documents import Document
 from langchain_ollama import OllamaEmbeddings
+from chonkie import Tokenizer
+from chonkie.tokenizer import CharacterTokenizer
 
 
 logger = logging.getLogger(__name__)
 
 
-# ---------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------
-
 DEFAULT_MODEL = "embeddinggemma-2:270m"
 DEFAULT_BASE_URL = "http://localhost:11434"
 
-# Character-based chunk size to align with your existing configuration.
 DEFAULT_CHUNK_SIZE = 2400
 
-# Chonkie accepts an integer percentile threshold from 1 to 100.
-DEFAULT_THRESHOLD = 85
+DEFAULT_THRESHOLD = 0.85
 
 
 class OllamaChonkieEmbeddings(BaseEmbeddings):
-    """
-    Adapter that allows Chonkie to use LangChain's OllamaEmbeddings.
-
-    Chonkie calls:
-        embed()
-        embed_batch()
-        get_tokenizer_or_token_counter()
-        dimension
-
-    similarity() is also implemented for compatibility with
-    Chonkie versions that declare it as an abstract method.
-    """
 
     def __init__(
         self,
@@ -62,10 +46,6 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
         )
 
         self._dimension: int | None = None
-
-    # -----------------------------------------------------------------
-    # Embedding methods
-    # -----------------------------------------------------------------
 
     def embed(self, text: str) -> list[float]:
         """Generate an embedding for a single text."""
@@ -130,10 +110,6 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
             for vector in vectors
         ]
 
-    # -----------------------------------------------------------------
-    # Similarity
-    # -----------------------------------------------------------------
-
     def similarity(
         self,
         vector_a: list[float],
@@ -165,10 +141,6 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
         # Protect against small floating-point rounding errors.
         return max(-1.0, min(1.0, similarity))
 
-    # -----------------------------------------------------------------
-    # Token counter
-    # -----------------------------------------------------------------
-
     @staticmethod
     def _count_characters(text: str) -> int:
         """
@@ -184,10 +156,6 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
         """Return Chonkie's supported custom token-counter callable."""
 
         return self._count_characters
-
-    # -----------------------------------------------------------------
-    # Embedding dimension
-    # -----------------------------------------------------------------
 
     @property
     def dimension(self) -> int:
@@ -206,10 +174,6 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
             )
 
         return self._dimension
-
-    # -----------------------------------------------------------------
-    # Internal validation
-    # -----------------------------------------------------------------
 
     @staticmethod
     def _validate_vector(vector: list[float]) -> None:
@@ -237,6 +201,12 @@ class OllamaChonkieEmbeddings(BaseEmbeddings):
                 f"Expected {self._dimension}, received {dimension}."
             )
 
+    def get_tokenizer(self):
+        """Return a tokenizer compatible with Chonkie's BaseEmbeddings."""
+
+        # return Tokenizer("character")
+        return CharacterTokenizer()
+
 
 def semantic_chunk_chonkie(
     text: str,
@@ -245,7 +215,7 @@ def semantic_chunk_chonkie(
     model: str = DEFAULT_MODEL,
     base_url: str = DEFAULT_BASE_URL,
     chunk_size: int = DEFAULT_CHUNK_SIZE,
-    threshold: int = DEFAULT_THRESHOLD,
+    threshold: float = DEFAULT_THRESHOLD,
 ) -> list[Document]:
     """
     Split text into semantically related chunks using Chonkie.
@@ -284,8 +254,15 @@ def semantic_chunk_chonkie(
     if chunk_size <= 0:
         raise ValueError("chunk_size must be greater than zero.")
 
-    if not isinstance(threshold, int) or not 1 <= threshold <= 100:
-        raise ValueError("threshold must be an integer between 1 and 100.")
+    # if not isinstance(threshold, int) or not 1 <= threshold <= 100:
+    #     raise ValueError("threshold must be an integer between 1 and 100.")
+
+    if (
+        isinstance(threshold, bool)
+        or not isinstance(threshold, (int, float))
+        or not 0.0 <= threshold <= 1.0
+    ):
+        raise ValueError("threshold must be a number between 0 and 1.")
 
     source_metadata = dict(metadata or {})
 

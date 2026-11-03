@@ -17,7 +17,7 @@ def semantic_chunk_llamaindex(
     *,
     model: str = "embeddinggemma-2:270m",
     base_url: str = "http://localhost:11434",
-    breakpoint_percentile: int = 85,
+    breakpoint_percentile: int = 80,
     buffer_size: int = 1,
     metadata: dict[str, Any] | None = None,
 ) -> list[Document]:

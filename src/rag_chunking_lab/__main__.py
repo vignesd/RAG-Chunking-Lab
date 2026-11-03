@@ -1,3 +1,4 @@
+from __future__ import annotations
 from collections.abc import Callable
 from pathlib import Path
 
@@ -27,7 +28,7 @@ STRATEGIES: dict[int, tuple[str, Callable[[str], object]]] = {
     4: ("Semantic Chunking (Langchain)", semantic_chunk),
     5: ("Semantic Chunking (Cosin Similarity)", semantic_chunk_similarity),
     6: ("Semantic Chunking (Hybird)", semantic_chunk_hybrid),
-    7: ("Semantic Chunking (Chonkie)", semantic_chunk_chonkie),
+    7: ("Semantic Chunking (Chonkie)", semantic_chunk_chonkie),  # type:ignore
     8: ("Semantic Chunking (LlamaIndex)", semantic_chunk_llamaindex),
     9: ("Agentic Chunking (OpenAI)", agentic_chunk),
 }
